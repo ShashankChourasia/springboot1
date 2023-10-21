@@ -66,14 +66,14 @@ public class PostController {
 		return ResponseEntity.ok(updatePost);
 	}
 	
-	@DeleteMapping("/delete-post/{id}")
-    public ResponseEntity<String> deleteItemById(@PathVariable String id) {
-        if (service.deleteItemById(id)) {
-            return new ResponseEntity<>("Post with ID " + id + " deleted.", HttpStatus.OK);
-        } else {
-            return new ResponseEntity<>("Post with ID " + id + " not found.", HttpStatus.NOT_FOUND);
-        }
-    }
+//	@DeleteMapping("/delete-post/{id}")
+//    public ResponseEntity<String> deleteItemById(@PathVariable String id) {
+//        if (service.deleteItemById(id)) {
+//            return new ResponseEntity<>("Post with ID " + id + " deleted.", HttpStatus.OK);
+//        } else {
+//            return new ResponseEntity<>("Post with ID " + id + " not found.", HttpStatus.NOT_FOUND);
+//        }
+//    }
 
 //	@GetMapping("/posts/ex")
 //	@PreAuthorize("hasAuthority('ROLE_USER')")
